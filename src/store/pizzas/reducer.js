@@ -32,6 +32,18 @@ const initialState = {
 
 export default function reducer(state = initialState, action) {
   switch (action.type) {
+    case "pizzas/add": {
+      const bought = 0;
+      const id = Math.floor(Math.random() * 10000);
+      const newPizza = { ...action.payload, id: id, bought };
+
+      const newState = {
+        ...state,
+        all: [...state.all, newPizza],
+      };
+
+      return newState;
+    }
     default: {
       return state;
     }

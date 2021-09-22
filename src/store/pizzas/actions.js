@@ -1,6 +1,6 @@
 export const addPizza = (name, description) => {
   return {
-    type: "addPizza",
+    type: "pizzas/add",
     payload: { name, description },
   };
 };
