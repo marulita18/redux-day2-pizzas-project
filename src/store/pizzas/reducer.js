@@ -1,5 +1,5 @@
 const initialState = {
-  allPizzas: [
+  all: [
     {
       id: 161235,
       name: "Pizza Margherita",
